@@ -36,8 +36,9 @@ def div(a, b):
 # Modulus division operator
 def mod(a, b):
 	return a % b
-
-
+def exp(a, b):
+	return (a ** b)
+		 
 
 # -------------------------------------------------------- #
 
@@ -74,7 +75,10 @@ while (True):
             print "Quotient: ", div(a, b)
 		elif (op == "%"):
 			print "Remainer: ", mod(a,b)        
-		else:
+
+		elif (op == "**"):
+			print "Result: ", exp(a, b)
+        else:
             print "Invalid operation..."
 
     q = raw_input("Quit? [y/n] ")
